@@ -1,9 +1,5 @@
 language: c
-
-compiler:
-  - gcc
-  - clang
-
+compiler: gcc
 script: make
 
 notifications:

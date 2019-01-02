@@ -1,7 +1,7 @@
 CFLAGS = -std=c99 -Wall -g 
 
 calc.o: main.c getop.c stack.c getch.c calc.h
-	$(CC) $(CFLAGS) -o calc.o calc.h *.c
+	$(CC) $(CFLAGS) -o calc.o calc.h main.c getop.c getch.c stack.c
 
 .PHONY: format
 format:
