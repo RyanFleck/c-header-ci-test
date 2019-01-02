@@ -13,7 +13,7 @@ int main()
     pop();
     getch();
     ungetch(0);
-    
+
     printf("\nAll methods called.\n");
 
     return 0;
