@@ -1,20 +1,22 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdlib.h>  // Supplies atof()
 #include "calc.h"
 
 #define MAXOP 100
 
 int main()
 {
-    printf(">> Main\n");
+    int type;
+    double op2;
+    char s[MAXOP];
 
-    getop("c");
-    push(0.0);
-    pop();
-    getch();
-    ungetch(0);
-
-    printf("\nAll methods called.\n");
+    while ( (type = getop(s)) != EOF ) {
+        switch(type) {
+        case NUMBER:
+            push(atof(s));
+            break;
+        }
+    }
 
     return 0;
 }

@@ -15,6 +15,6 @@ int getch(void)
 
 void ungetch(int i)
 {
-    printf(">> UnGetCH\n");
+    printf(">> UnGetCH %i\n", i);
 
 }

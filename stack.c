@@ -8,7 +8,7 @@ double val[MAXVAL];
 
 void push(double d)
 {
-    printf(">> Push\n");
+    printf(">> Push %f\n", d);
 }
 
 double pop(void)
